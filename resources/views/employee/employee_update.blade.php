@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-@include('website.includes.head')
+@include('employee.includes.head')
 </head>
 <body>
 <div class="container" style="background-color:#98BA7D" >
@@ -16,7 +16,7 @@
     </div>
     <div class="row mt-2 p-3" style="background-color:#98BA7D">
             <div class="col-md-3">
-            @include('website.includes.sidebar')
+            @include('employee.includes.sidebar')
             </div>
             <div class="col-md-9">
             <table class="table">
@@ -44,7 +44,9 @@
     <input type="text" class="form-control" id="contact" name="contact" value="{{$employee->contact_no}}">
   </div>
   
-  <button type="submit" class="btn btn-primary">Submit</button>
+  <button type="submit" class="btn btn-primary">update</button>
+  <a class="btn btn-primary" href ="{{URL::to('generate-pdf')}}">Generate Pdf</a>
+  
 </form>
         
             </div>

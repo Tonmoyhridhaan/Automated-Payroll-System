@@ -19,7 +19,7 @@
                             <td><a href="{{URL::to('employee-pass')}}">update password</td>
                         </tr>
                         <tr>
-                            <td><a href="{{URL::to('create-category')}}">update your info</td>
+                            <td><a href="{{URL::to('employee_update')}}">update your info</td>
                         </tr>
                         <tr>
                             <td><a href="{{URL::to('upload-image')}}">upload image</td>
