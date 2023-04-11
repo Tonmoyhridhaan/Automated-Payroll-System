@@ -39,7 +39,7 @@
           </div>
           <input type="submit" name="submit" value="login">
         </form>
-        <p> Don't have an Account? <a href="{{URL::to('signup')}}"> sign up now!</a></p>
+        <p> Don't have an Account? Contact with authority</p>
       </div>
     </div>
     

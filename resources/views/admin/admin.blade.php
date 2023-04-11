@@ -18,24 +18,37 @@
                 @include('admin.includes.sidebar')
             </div>
             <div class="col-md-9">
-            {{ csrf_field() }}
-                
-                                    
-                    <table class="table">
-                    
-                    <thead>
-                      <tr>
-                        <th>name</th>
-                        <th>Email</th>
-                        <th>Location</th>
-                      </tr>
-                    </thead>
-                    
-                  </table>
-                  
-                  </div>
-                  
+            <form action="" >
+    @csrf
+    <h3 class="text-center text -primary"> Admin Information</h3>
 
+  
+  
+  <div class="form-group">
+                            
+  <div class="form-group">
+    <label for="contact"><b> Name:</b>{{$admin->name}}</label>
+    
+  </div>
+  <div class="form-group">
+    <label for="contact"><b>Adress:</b></label>
+    
+  </div>
+  <div class="form-group">
+    <label for="contact"><b>Email:</b>admin1@gmail.com</label>
+   
+  </div>
+  <div class="form-group">
+    <label for="contact"><b>Contact_no:</b>0191678888</label>
+    
+  </div>
+  
+  
+    </div>
+  
+ 
+  
+</form>
                   </div>
             
     

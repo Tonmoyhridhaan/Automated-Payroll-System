@@ -12,10 +12,10 @@
 </head>
 <body>
     <div class="container" >
-        <div class="row text-center" style="background-color:#98BA7D">
+        <div class="row text-center" style="background-color:#5298b8>
             <h2 class="text-center">my template</h2>
         </div>
-        <div class="row mt-2 p-3" style="background-color:#98BA7D">
+        <div class="row mt-2 p-3" style="background-color:#5298b8">
             <div class="col-md-3">
                 <table class="table table-dark">
                     <thead>
@@ -38,7 +38,7 @@
                 </table>
             </div>
             <div class="col-md-9">
-                <div class="card" style="width: 40rem; background-color:#547793">
+                <div class="card" style="width: 40rem; background-color:#5298b8">
                     <img src="..." class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Card title</h5>

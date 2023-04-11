@@ -109,12 +109,12 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   
   /*-- end reset --*/
   body {
-    background: #76b852;
+    background: #5298b8;
     /* fallback for old browsers */
-    background: -webkit-linear-gradient(to top, #76b852, #8DC26F);
-    background: -moz-linear-gradient(to top, #76b852, #8DC26F);
-    background: -o-linear-gradient(to top, #76b852, #8DC26F);
-    background: linear-gradient(to top, #76b852, #8DC26F);
+    background: -webkit-linear-gradient(to top, #34a7e9, #2fb7e0);
+    background: -moz-linear-gradient(to top, #2991e6, #4ab7e9);
+    background: -o-linear-gradient(to top, #19aedb, #2ba9e4);
+    background: linear-gradient(to top, #29b4eb, #2c8cdb);
     background-size: cover;
     background-attachment: fixed;
     font-family: 'Roboto', sans-serif;
@@ -138,7 +138,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   .main-agileinfo {
     width: 35%;
     margin: 3em auto;
-    background: rgba(0, 0, 0, 0.18);
+    background: rgba(30, 88, 196, 0.18);
     background-size: cover;
   }
   
@@ -209,9 +209,9 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   input[type="submit"] {
     font-size: .9em;
     color: #fff;
-    background: #76b852;
+    background: #afc9e7;
     outline: none;
-    border: 1px solid #76b852;
+    border: 1px solid #9ecbe9;
     cursor: pointer;
     padding: 0.9em;
     -webkit-appearance: none;
@@ -226,7 +226,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     -o-transition: .5s all;
     -ms-transition: .5s all;
     transition: .5s all;
-    background: #8DC26F;
+    background: #c1ddb1;
   }
   
   .agileits-top p {
@@ -246,7 +246,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   }
   
   .agileits-top p a:hover {
-    color: #76b852;
+    color: #0e385f;
   }
   
   /*-- //main --*/
@@ -260,7 +260,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   }
   
   input.checkbox {
-    background: #8DC26F;
+    background: #556e80;
     cursor: pointer;
     width: 1.2em;
     height: 1.2em;

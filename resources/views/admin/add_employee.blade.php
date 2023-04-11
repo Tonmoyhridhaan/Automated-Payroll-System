@@ -20,41 +20,54 @@
             <div class="col-md-9">
         <form action="{{URL::to('employeestore')}}" method="post">
             {{csrf_field()}}
-           <input class="text" type="text" name="name" placeholder=" Name" required="">
-           <input class="text" type="text" name="address" placeholder=" address" required="">
-           <input class="text" type="text" name="city" placeholder=" city" required="">
-          
-           <input class="text" type="text" name="contact no" placeholder=" mobile" required="">
-           <input class="text" type="text" name="degree" placeholder=" degree" required="">
-           <input class="text" type="text" name="desigtion" placeholder=" desigtion" required="">
-           <input class="text" type="text" name="salary" placeholder=" salary" required="">
-           <input class="text email" type="email" name="email" placeholder="Email" required="">
-                    <input class="text" type="password" name="password1" placeholder="Password" required="">
-          <input class="text" type="password" name="password2" placeholder="Confirm Password" required="">
+            <div class="col-md-9">
+                <div class="card" style="width: 40rem; background-color:white">
+                    <form class="form-horizontal" action="{{URL::to('insert-category')}}">
+                    {{csrf_field()}}
+                        <div class="form-group">
+                            <label class="control-label col-sm-2" for="name">name</label>
+                            <div class="col-sm-10">
+                            <input type="text" name="name" class="form-control" id="name" placeholder="Enter name">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-sm-2" for="name">email</label>
+                            <div class="col-sm-10">
+                            <input type="text" name="email" class="form-control" id="name" placeholder="Enter email">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-sm-2" for="name">address</label>
+                            <div class="col-sm-10">
+                            <input type="text" name="address" class="form-control" id="name" placeholder="Enter address">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="control-label col-sm-2" for="contact no">contact no</label>
+                            <div class="col-sm-10">
+                            <input type="text" name="contact no" class="form-control" id="name" placeholder="Enter contact no">
+                            </div>
+                        </div>
+                        
+                        
+                        <div class="form-group">
+                            <label class="control-label col-sm-2" for="name">password</label>
+                            <div class="col-sm-10">
+                            <input type="password" name="password" class="form-control" id="name" placeholder="Enter password">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <div class="col-sm-offset-2 col-sm-10">
+                            <button type="submit" class="btn btn-primary">Create</button>
+                            </div>
+                        </div>
+                    </form>
 
-          
-           
-          <div class="wthree-text">
-            
-            <div class="clear"> </div>
-          </div>
-          <input type="submit" name="submit" value="add employee">
-        </form>
-        
-      </div>
+                </div>
+            </div>
+        </div>
     </div>
-
-    
-                           
-
-
-
-    
-    <!-- //copyright -->
-    
-  </div>
-  </section>
-    
- 
 </body>
 </html>

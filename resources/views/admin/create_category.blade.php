@@ -23,7 +23,7 @@
                             </div>
                         </div>
                         <div class="form-group">
-                            <label class="control-label col-sm-2" for="email">email:</label>
+                            <label class="control-label col-sm-2" for="email">amont</label>
                             <div class="col-sm-10">
                             <input type="number" step="0.01" name="amount"class="form-control" id="amount" placeholder="Enter amount">
                             </div>

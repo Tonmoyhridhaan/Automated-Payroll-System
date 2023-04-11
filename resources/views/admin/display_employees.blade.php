@@ -52,8 +52,10 @@
   </tr>   
             @endforeach
             
+            
         </tbody>
       </table>
+      <button type="button" class="btn btn-green"> <a href ="{{URL::to('generate-pdf2/')}}"><b> pdf generate</b></button></td>
             </div>
         </div>
     </div>

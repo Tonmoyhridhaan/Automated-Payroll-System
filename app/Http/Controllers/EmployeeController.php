@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Image;
 use Session;
+use File;
 use App\Models\Employee;
 class EmployeeController extends Controller
 {
@@ -12,7 +13,7 @@ class EmployeeController extends Controller
         $id = Session::get('id');
         $employee= Employee::find($id);
         $data=compact('employee');
-        return view ('employee')->with($data);;
+        return view ('employee.employee')->with($data);
     } 
     public function editemployee($id){
         $employee= Employee::find($id);
@@ -36,7 +37,7 @@ class EmployeeController extends Controller
         $employees->email=$r['email'];
         $employees->contact_no=$r['contact'];
         $employees->save();
-        return redirect('display_employees');
+        return redirect('employee');
 
     }
     public function updatePassword(){
@@ -69,9 +70,20 @@ class EmployeeController extends Controller
         //rename image
         echo $filename;
         $employees= Employee::find($id);
+        $old_img = $employees->image;
+        if($old_img!='user.png'){
+            if(File::exists(public_path('image/'.$old_img))){
+                File::delete(public_path('image/'.$old_img));
+            }
+            if(File::exists(public_path('thumbnail/'.$old_img))){
+                File::delete(public_path('thumbnail/'.$old_img));
+            }
+        }
+
         $employees->image=$filename;
 
         $employees->save();
+        return redirect()->to('employee') ;
 
     }
 }
